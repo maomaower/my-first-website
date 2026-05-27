@@ -1,6 +1,6 @@
 {
   "name": "@maomaower/my-first-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A colorful static website deployed on Render and Vercel.",
   "main": "index.js",
   "repository": {
