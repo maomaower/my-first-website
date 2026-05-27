@@ -18,15 +18,17 @@ jobs:
           node-version: '20'
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@maomaower'
+          always-auth: true
 
       - name: Install dependencies
         run: npm install
 
-      - name: Verify npm auth and registry
+      - name: Configure GitHub Packages auth
         run: |
-          npm config get registry
+          npm config set @maomaower:registry https://npm.pkg.github.com/
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
           npm config get @maomaower:registry
-          npm whoami
+          npm whoami --registry https://npm.pkg.github.com/
 
       - name: Publish package
         run: npm publish --access public --registry https://npm.pkg.github.com/
