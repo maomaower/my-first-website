@@ -6,7 +6,7 @@ This is a static website built with `index.html` and styled for a colorful landi
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
 Then open `http://127.0.0.1:5500` to view it locally.

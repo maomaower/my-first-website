@@ -1,8 +1,8 @@
 services:
-  - type: static
+  - type: web
     name: my-first-website
-    env: static
+    env: node
     branch: main
-    buildCommand: ""
-    publishPath: /
+    buildCommand: "npm install"
+    startCommand: "npm start"
     plan: free
