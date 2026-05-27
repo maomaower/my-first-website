@@ -19,5 +19,14 @@ Then open `http://127.0.0.1:5500` to view it locally.
 ## Deploy to Render
 
 1. Connect this GitHub repo to Render.
-2. Use the `render.yaml` manifest or create a new Static Site service.
-3. Set branch to `main` and publish path to `/`.
+2. Use the `render.yaml` manifest or create a new Node web service.
+3. Set branch to `main`.
+
+## GitHub Packages
+
+This repository is configured to publish an npm package to GitHub Packages using `@maomaower/my-first-website`.
+
+- Package name: `@maomaower/my-first-website`
+- Registry: `https://npm.pkg.github.com/`
+
+Publish happens automatically on every push to `main` via GitHub Actions.

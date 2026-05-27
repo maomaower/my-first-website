@@ -1,14 +1,21 @@
 {
-  "name": "folder1001",
+  "name": "@maomaower/my-first-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "A colorful static website deployed on Render and Vercel.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maomaower/my-first-website.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "dev": "live-server --open=index.html --port=5500",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["static-site", "render", "vercel", "github-packages"],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
